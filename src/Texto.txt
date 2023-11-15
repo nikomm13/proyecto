@@ -1,0 +1,15 @@
+Mascota:konnie:Gato:persa:5:hembra:20:40:1001297410:Si
+Mascota:rockie:Perro:montes:8:macho:20:30:1001291930:14052008
+Mascota:simba:Gato:criollo:9:hembra:20:50:8541235:No
+Mascota:Bruno:Perro:bernes:12:macho:20:50:1001297410:21102002
+Veterinario:Doc helena:Oftalmologo:SFJ45
+Veterinario:Doc felipe:General:781AZH
+Examen:Rayos-X:30000
+Examen:Colonoscopia:80000
+Examen:vision:25000
+Medicamento:RENALOF:16000
+Medicamento:cutamicol:50000
+Medicamento:terramisina:25000
+Propietario:1001297410:Nicolas:Cll 26 #19-34:nicolas@gmail.com:25654120
+Propietario:1001291930:Felipe:Cll 27 dg 5-34:felipe@gmail.com:58614120
+Propietario:1001297410:Valentina:Cll 72 #91-10:valentina@gmail.com:256548652
