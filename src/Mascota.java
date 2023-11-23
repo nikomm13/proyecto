@@ -99,12 +99,13 @@ public class Mascota {
     public void setDatoEspecifico(String datoEspecifico) {
         this.datoEspecifico = datoEspecifico;
     }
+
     public int listaMascota(){
         for (int i = 0; i < lstMascotas.size(); i ++){
             System.out.println(i + " " + lstMascotas.get(i).getNombre());
         }
         int op;
-        op = sc.nextInt();
+        op = Integer.parseInt(sc.nextLine());
         if (op < 0 || op>= lstMascotas.size()){
             return listaMascota();
         }
@@ -115,6 +116,7 @@ public class Mascota {
     }
 
     public void setAltura(int altura) {
+
         this.altura = altura;
     }
 }
