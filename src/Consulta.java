@@ -1,20 +1,34 @@
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Consulta {
-        private Veterinario veterinario;
-        private Mascota mascota;
-        private Diagnostico diagnostico;
-        private Examen examen;
-        private Medicamento medicamento;
-        private Tratamiento tratamiento;
-        private Date fecha;
+    private Veterinario veterinario; //-
+    private Mascota mascota; //-
+    private Diagnostico diagnostico; //-
+    private Examen examen;
+    private Tratamiento tratamiento;
+    private LocalDate fecha;
 
+    public Consulta(Veterinario veterinario, Mascota mascota, Diagnostico diagnostico, Examen examen, Tratamiento tratamiento, LocalDate fecha){
+        this.veterinario = veterinario;
+        this.mascota = mascota;
+        this.diagnostico = diagnostico;
+        this.examen = examen;
+        this.tratamiento = tratamiento;
+        this.fecha = fecha;
+    }
+    List<Veterinario> lstVeterinarios = new ArrayList<>();
+    List<Examen> lstExamenes = new ArrayList<>();
 
-    public Date getFecha() {
+    public Consulta(){
+    }
+
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 
@@ -24,14 +38,6 @@ public class Consulta {
 
     public void setTratamiento(Tratamiento tratamiento) {
         this.tratamiento = tratamiento;
-    }
-
-    public Medicamento getMedicamento() {
-        return medicamento;
-    }
-
-    public void setMedicamento(Medicamento medicamento) {
-        this.medicamento = medicamento;
     }
 
     public Examen getExamen() {
@@ -66,18 +72,10 @@ public class Consulta {
         this.veterinario = veterinario;
     }
 
-    public Consulta(Veterinario veterinario,Mascota mascota, Diagnostico diagnostico, Examen examen, Medicamento medicamento, Tratamiento tratamiento, Date fecha){
-        this.veterinario = veterinario;
-        this.diagnostico = diagnostico;
-        this.mascota = mascota;
-        this.fecha = fecha;
-        this.tratamiento = tratamiento;
-        this.examen = examen;
-        this.medicamento = medicamento;
-    }
-public String toString(){
-    return "Consulta de "+ mascota+ "atendido por "+veterinario+ "quien diagnosticó : "+diagnostico+ examen+tratamiento+medicamento+ "con fecha de:"+fecha;
-}
 
-//ok
+    public String toString() {
+        return "Consulta de " + mascota + "atendido por " + veterinario + "quien diagnosticó : " + diagnostico + examen + tratamiento + "con fecha de:" + fecha + ". ";
+    }
+
+}
 
